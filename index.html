@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>30일 홈트 챌린지</title>
+<meta name="theme-color" content="#EDF1EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1511" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="30일 홈트">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAENklEQVR42u3d3XHcRhBF4dUU47CisZOxwlE0zkaZ+IEvKpeLBHcBTN/u77ySRWIaB7cHPwN8++PvPx/A/7GUAOQAOUAOkAPkADlADpAD5AA5AHKAHCAHyAFygBwgB8iBrrzNGeqvn/+c9ae+//hLckBbAcgBcoAcIAfIAXKAHCAHyAFyAOQAOUAOkAPkADlQn29eNfnB44NDHgeUHCAHyAFywIS02DzUzHSWHCeuaJqjS2c5ThdimigN5bjNifaWtJJjoxYtFekgRxEn+lmSLUdZLXookipHhBbpiixm2OYmyZFY4twISZLjXDO+tJM2/mty3LFvTtwl1bZnrhwv7olL90Hlbesvx9PVv7nuKdvZRI7EcjdTpKgcT1S5VH3Tt/+dxYwi56sFz9LLJcdXa1R8Thc9nFpydH06K3RcSwWrdZk6/WUxgx+l28rxWjR4jiZosKvrwWcUHeQ4eCR1ejzz4Fi2N5fNbaWCGbsWUtc/KpbMkB+pc47ea4eKj26bHEcOiAmryo6McVd4LGbwo8OpLPrLITZSwmMxgx8xbWXyO9qqjf1WORqsOtnOnTVcDh0V2C+H2Iir5HLQCI/qcjCjYDVukkNPSaynK6TYKsenmuspT9TkhvCQHCgsh9goW5nL5TAVza2ttoKqcugplesjObBJDhOO6GnHzuTQU4pXSVsBOUAOkAPhcnw8kTYbPWtOet0Jy/Tk+Liyw0/FFzM2XkggR7AZw/0wIQU5XguDmeEhOUAOkKNOJyLHOD9GKTJUjleuz87xQ3KIEHKcGh5DFBmdHKfc/GusyPS2ctbN4ZZ+XPvu86C79v/Z1N+3bfu3YHaV8c3s8tMSv//ooCLvv9bjaRVnK5dEQo+JCDm+5kfo19rIUVGR6AgJ+N7KcEXafm+l/VPExwd4USkurbC2cvdERFuZMmU7qMjT9uytj+S4XJHcXFk31GugIj3+Ucx3ZUMjJPrBEW1Fam6Vo8L7VuOo8GZfyYHdclhTn1jPKsmhsxSsxlIRZuyXQ2eJq+Ry0KhACTmER1YNl0PH2KvIUfOj7Slm3By9G5KDHxFmPFwhRTk5hEf92NiZHPwobkZAW+ntR/HRBXxvpasfB8c193srY/2ob8Yj6LuynfyIMCPsVLaHH0GjuPb9HBeVLPQeTdwYqyRH+9XrifYXaiuN/QjNxSpt5em9XrzFRA+nnBzPpUJBRRqMouLZyhM1qtZlevhdMTle3N8bq5y4zZFyZJW7mRYZcrzeMi6tfuVtGyHHWVOKE/dEte0ZLccVs86Nl1VSrvAmyfFocXsl6Np/mBzRisTdElqqbJtbJUdWhOSu88uWo7gi6cs/O8hRzZI2S4JbybFdkWYrxRvKcb8lXd8e0FmOS0WZ8DqJKXK8qMvMN4vMlQOfYpU9yAFygBwgB8gBcoAcIAfIAXIA5AA5QA5cyb/KDAtkJMSvLwAAAABJRU5ErkJggg==">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAENklEQVR42u3d3XHcRhBF4dUU47CisZOxwlE0zkaZ+IEvKpeLBHcBTN/u77ySRWIaB7cHPwN8++PvPx/A/7GUAOQAOUAOkAPkADlADpAD5AA5AHKAHCAHyAFygBwgB8iBrrzNGeqvn/+c9ae+//hLckBbAcgBcoAcIAfIAXKAHCAHyAFyAOQAOUAOkAPkADlQn29eNfnB44NDHgeUHCAHyAFywIS02DzUzHSWHCeuaJqjS2c5ThdimigN5bjNifaWtJJjoxYtFekgRxEn+lmSLUdZLXookipHhBbpiixm2OYmyZFY4twISZLjXDO+tJM2/mty3LFvTtwl1bZnrhwv7olL90Hlbesvx9PVv7nuKdvZRI7EcjdTpKgcT1S5VH3Tt/+dxYwi56sFz9LLJcdXa1R8Thc9nFpydH06K3RcSwWrdZk6/WUxgx+l28rxWjR4jiZosKvrwWcUHeQ4eCR1ejzz4Fi2N5fNbaWCGbsWUtc/KpbMkB+pc47ea4eKj26bHEcOiAmryo6McVd4LGbwo8OpLPrLITZSwmMxgx8xbWXyO9qqjf1WORqsOtnOnTVcDh0V2C+H2Iir5HLQCI/qcjCjYDVukkNPSaynK6TYKsenmuspT9TkhvCQHCgsh9goW5nL5TAVza2ttoKqcugplesjObBJDhOO6GnHzuTQU4pXSVsBOUAOkAPhcnw8kTYbPWtOet0Jy/Tk+Liyw0/FFzM2XkggR7AZw/0wIQU5XguDmeEhOUAOkKNOJyLHOD9GKTJUjleuz87xQ3KIEHKcGh5DFBmdHKfc/GusyPS2ctbN4ZZ+XPvu86C79v/Z1N+3bfu3YHaV8c3s8tMSv//ooCLvv9bjaRVnK5dEQo+JCDm+5kfo19rIUVGR6AgJ+N7KcEXafm+l/VPExwd4USkurbC2cvdERFuZMmU7qMjT9uytj+S4XJHcXFk31GugIj3+Ucx3ZUMjJPrBEW1Fam6Vo8L7VuOo8GZfyYHdclhTn1jPKsmhsxSsxlIRZuyXQ2eJq+Ry0KhACTmER1YNl0PH2KvIUfOj7Slm3By9G5KDHxFmPFwhRTk5hEf92NiZHPwobkZAW+ntR/HRBXxvpasfB8c193srY/2ob8Yj6LuynfyIMCPsVLaHH0GjuPb9HBeVLPQeTdwYqyRH+9XrifYXaiuN/QjNxSpt5em9XrzFRA+nnBzPpUJBRRqMouLZyhM1qtZlevhdMTle3N8bq5y4zZFyZJW7mRYZcrzeMi6tfuVtGyHHWVOKE/dEte0ZLccVs86Nl1VSrvAmyfFocXsl6Np/mBzRisTdElqqbJtbJUdWhOSu88uWo7gi6cs/O8hRzZI2S4JbybFdkWYrxRvKcb8lXd8e0FmOS0WZ8DqJKXK8qMvMN4vMlQOfYpU9yAFygBwgB8gBcoAcIAfIAXIA5AA5QA5cyb/KDAtkJMSvLwAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* Layout: 한 열 목록. 상단 고정 진행바 > 30일 달력 > 자리(서서/벽/바닥/야외)별 구간 > 운동 카드 > 동기화 설정 */
+:root{
+  color-scheme:light;
+  --bg:#EDF1EC; --surface:#FFFFFF; --surface2:#E2EAE1; --ink:#14211A; --muted:#55665B; --line:#C7D3C7;
+  --accent:#1E6B45; --accent-ink:#FFFFFF; --alert:#C2410C; --alert-bg:#FFE8DB; --ok-bg:#DDF0E3; --warn:#B45309;
+  --f-display:'Barlow Condensed','Noto Sans KR',system-ui,sans-serif;
+  --f-body:'Noto Sans KR',system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1511; --surface:#18211B; --surface2:#222E26; --ink:#E7F0E9; --muted:#93A79A; --line:#2B3A30;
+    --accent:#5CCB8B; --accent-ink:#0B1A11; --alert:#FF9A5C; --alert-bg:#3A2418; --ok-bg:#1B3325; --warn:#FBBF24;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1511; --surface:#18211B; --surface2:#222E26; --ink:#E7F0E9; --muted:#93A79A; --line:#2B3A30;
+  --accent:#5CCB8B; --accent-ink:#0B1A11; --alert:#FF9A5C; --alert-bg:#3A2418; --ok-bg:#1B3325; --warn:#FBBF24;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;
+  -webkit-tap-highlight-color:transparent;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:calc(96px + env(safe-area-inset-bottom,0px));
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:640px;margin-inline:auto}
+h1,h2,h3,p{margin:0}
+.hero{padding-block:20px 12px;display:grid;gap:4px}
+.hero h1{font-family:var(--f-display);font-size:34px;line-height:1.1;font-weight:700;letter-spacing:.01em;text-wrap:balance}
+.hero p{color:var(--muted);font-size:14px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:grid;gap:8px}
+.toprow{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.dayl{font-family:var(--f-display);font-size:26px;font-weight:700}
+.of{color:var(--muted);font-family:var(--f-display);font-size:18px}
+.stat{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.sync{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.sync::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--muted);flex:none}
+.sync[data-state="ok"]::before{background:var(--accent)}
+.sync[data-state="busy"]::before{background:var(--warn)}
+.sync[data-state="off"]::before{background:var(--alert)}
+.bar{height:8px;background:var(--surface2);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.runline{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--accent);color:var(--accent-ink);padding:8px 12px;border-radius:8px}
+.runline span{font-family:var(--f-display);font-size:26px;font-weight:700;font-variant-numeric:tabular-nums}
+.sec{display:grid;gap:10px;padding-top:22px}
+.sech{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sech h2{font-size:16px;font-weight:700}
+.sech span{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:6px}
+.dbtn{min-height:44px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-family:var(--f-display);font-size:18px;font-weight:600;cursor:pointer;font-variant-numeric:tabular-nums;touch-action:manipulation}
+.dbtn.done{background:var(--ok-bg);border-color:var(--accent)}
+.dbtn.cur{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:10px;min-width:0}
+.card.done{border-color:var(--accent);background:var(--ok-bg)}
+.card.alert{background:var(--alert-bg);border-color:var(--alert)}
+@media (prefers-reduced-motion:no-preference){.card.alert{animation:pulse .9s ease-in-out 6}}
+@keyframes pulse{50%{transform:scale(1.015)}}
+.head{display:flex;gap:12px;align-items:flex-start}
+.no{font-family:var(--f-display);font-size:28px;line-height:1;color:var(--muted);font-weight:600;min-width:34px}
+.ttl{flex:1;min-width:0}
+.ttl h3{font-size:17px;font-weight:700;line-height:1.3}
+.spec{color:var(--muted);font-size:14px}
+.badge{font-size:12px;font-weight:700;background:var(--accent);color:var(--accent-ink);padding:2px 10px;border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12px;background:var(--surface2);padding:2px 10px;border-radius:99px}
+.note{font-size:13px;color:var(--muted)}
+.timer{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.digits{font-family:var(--f-display);font-size:60px;line-height:1;font-weight:700;font-variant-numeric:tabular-nums}
+.card.alert .digits{color:var(--alert)}
+.plabel{font-size:13px;color:var(--muted)}
+.rds{display:flex;gap:6px;flex-wrap:wrap}
+.rd{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:2px 10px;color:var(--muted)}
+.rd.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.rd.cur{border-color:var(--ink);color:var(--ink)}
+.btns,.sets{display:flex;gap:8px;flex-wrap:wrap}
+.btn{min-height:44px;min-width:44px;padding:0 18px;border-radius:8px;border:1px solid var(--line);background:var(--surface2);color:var(--ink);font:inherit;font-weight:700;cursor:pointer;touch-action:manipulation}
+.btn.primary,.btn.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.small{font-size:13px;font-weight:500}
+.btn:focus-visible,.dbtn:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.count{display:flex;align-items:baseline;gap:6px}
+.count b{font-family:var(--f-display);font-size:60px;line-height:1;font-variant-numeric:tabular-nums}
+.count span{font-family:var(--f-display);font-size:26px;color:var(--muted)}
+.cfg{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0 14px}
+.cfg summary{min-height:44px;display:flex;align-items:center;font-weight:700;cursor:pointer}
+.cfg .in{display:grid;gap:10px;padding-bottom:14px}
+.cfg label{font-size:13px;color:var(--muted)}
+.cfg input{width:100%;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:16px}
+.foot{padding-top:24px;display:grid;gap:6px;color:var(--muted);font-size:13px}
+#toast{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:608px;margin-inline:auto;background:var(--alert);color:#fff;border:0;border-radius:10px;padding:16px;min-height:44px;font:inherit;font-size:20px;font-weight:700;text-align:center;cursor:pointer;z-index:9}
+:root[data-theme="dark"] #toast{color:#1a0c04}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) #toast{color:#1a0c04}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="app"></div>
+  <section class="sec" id="cfg-sec">
+    <details class="cfg" id="cfg">
+      <summary>Google 시트 동기화 설정</summary>
+      <div class="in">
+        <label for="sheetUrl">Apps Script 웹 앱 주소 (…/exec)</label>
+        <input id="sheetUrl" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://script.google.com/macros/s/…/exec">
+        <div class="btns">
+          <button class="btn primary" data-act="saveurl">주소 저장</button>
+          <button class="btn" data-act="syncnow">지금 동기화</button>
+        </div>
+        <p class="note" id="syncmsg" role="status"></p>
+      </div>
+    </details>
+  </section>
+  <footer class="foot">
+    <p>순서는 서서 &gt; 벽 &gt; 바닥(엎드려 &gt; 옆으로 &gt; 누워서) &gt; 야외 순이라 자세 전환이 가장 적습니다.</p>
+    <p>사이드 플랭크 3회는 좌우를 번갈아 한다고 보고 계산했습니다. 양쪽을 각각 3회씩 하면 2분이 늘어납니다.</p>
+    <p>기록은 먼저 이 기기에 저장되고, 시트 주소가 설정되어 있으면 백그라운드에서 Google 시트로 동기화됩니다.</p>
+  </footer>
+</div>
+<button id="toast" hidden data-act="dismiss"></button>
+
+<script>
+// ▼ 배포한 Apps Script 웹 앱 주소(…/exec)를 여기에 붙여 넣으세요. 비워 두면 기기에만 저장됩니다.
+//   공개 저장소에 주소를 올리고 싶지 않다면 비워 두고, 앱 아래쪽 '동기화 설정'에서 입력해도 됩니다.
+const SHEETS_URL = '';
+
+const ZONES=['서서 · 워밍업과 하체','벽 앞','바닥 · 엎드려','바닥 · 옆으로','바닥 · 누워서','야외'];
+const EX=[
+ {id:'rope',name:'줄넘기',zone:0,muscles:['종아리','심폐','전신'],spec:'10분',kind:'time',sec:600,rounds:1},
+ {id:'heel',name:'뒤꿈치 들고 유지',zone:0,muscles:['종아리'],spec:'30초',kind:'time',sec:30,rounds:1},
+ {id:'lunge',name:'런지 자세 유지',zone:0,muscles:['허벅지 앞','엉덩이','고관절'],spec:'한 발 30초씩, 양발 모두',kind:'time',sec:30,rounds:2,labels:['첫 번째 발','반대 발']},
+ {id:'bss',name:'불가리안 스플릿 스쿼트',zone:0,muscles:['허벅지 앞','엉덩이','햄스트링'],spec:'한 발 10회씩 양발 모두 = 1세트, 총 3세트',kind:'sets',sets:3,note:'뒷발을 올릴 의자나 소파가 필요합니다.'},
+ {id:'wallsq',name:'벽에 기대어 스쿼트 유지',zone:1,muscles:['허벅지 앞','엉덩이'],spec:'1분',kind:'time',sec:60,rounds:1},
+ {id:'wallslide',name:'월슬라이드',zone:1,muscles:['어깨','하부 승모근','전거근'],spec:'15회 × 3세트',kind:'sets',sets:3},
+ {id:'pushup',name:'푸쉬업',zone:2,muscles:['가슴','삼두','어깨 앞쪽','코어'],spec:'하루 총 100회 (나눠서 해도 됩니다)',kind:'count',target:100},
+ {id:'plank',name:'플랭크 유지',zone:2,muscles:['복근','코어','어깨'],spec:'40초 × 하루 3회',kind:'time',sec:40,rounds:3},
+ {id:'vplank',name:'V 플랭크 유지',zone:2,muscles:['복근','어깨'],spec:'30초',kind:'time',sec:30,rounds:1},
+ {id:'side',name:'사이드 플랭크 유지',zone:3,muscles:['옆구리 복사근','중둔근'],spec:'40초 × 하루 3회',kind:'time',sec:40,rounds:3,labels:['1회','2회','3회']},
+ {id:'reverse',name:'리버스 플랭크 유지',zone:4,muscles:['엉덩이','햄스트링','삼두','허리'],spec:'40초 × 하루 3회',kind:'time',sec:40,rounds:3},
+ {id:'bridge',name:'힙브리지',zone:4,muscles:['엉덩이','햄스트링'],spec:'15회',kind:'sets',sets:1},
+ {id:'glute',name:'엉덩이 조이기 유지',zone:4,muscles:['엉덩이'],spec:'30초',kind:'time',sec:30,rounds:1},
+ {id:'run',name:'달리기',zone:5,muscles:['하체 전체','심폐'],spec:'10km',kind:'check'}
+];
+const byId={}; EX.forEach(e=>byId[e.id]=e);
+const timedTotal=EX.filter(e=>e.kind==='time').reduce((a,e)=>a+e.sec*e.rounds,0);
+
+/* ---------- 로컬 저장 (localStorage가 항상 먼저) ----------
+   store.log[일차][운동id] = {v: 값, t: 수정 시각(ms)}
+   store.pending[키] = 1  → 아직 시트에 보내지 못한 변경 */
+let store={};
+try{store=JSON.parse(localStorage.getItem('homt30')||'{}')||{}}catch(e){store={}}
+store.day=store.day||1; store.log=store.log||{}; store.prep=store.prep!==false;
+store.pending=store.pending||{}; store.url=store.url||'';
+Object.keys(store.log).forEach(d=>{
+  const o=store.log[d]||{};
+  Object.keys(o).forEach(k=>{
+    const r=o[k];
+    if(typeof r==='number')o[k]={v:r,t:0};
+    else if(!r||typeof r.v!=='number')delete o[k];
+  });
+});
+function save(){try{localStorage.setItem('homt30',JSON.stringify(store))}catch(e){}}
+function val(id,day){const r=(store.log[day||store.day]||{})[id];return r?r.v:0}
+function setVal(id,v){
+  const d=store.day;
+  (store.log[d]=store.log[d]||{})[id]={v:v,t:Date.now()};
+  store.pending[d+'_'+id]=1;
+  save();scheduleSync();
+}
+function isDone(e,v){return e.kind==='time'?v>=e.rounds:e.kind==='sets'?v>=e.sets:e.kind==='count'?v>=e.target:v>=1}
+function dayDone(n){return EX.every(e=>isDone(e,val(e.id,n)))}
+function fmt(s){return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')}
+function fmtLong(s){const m=Math.floor(s/60),r=s%60;return (((m?m+'분 ':'')+(r?r+'초':'')).trim())||'0초'}
+
+/* ---------- 소리·진동·화면 유지 ---------- */
+let T=null, flash=null, AC=null;
+function beep(f,d){
+  try{
+    AC=AC||new (window.AudioContext||window.webkitAudioContext)();
+    if(AC.state==='suspended')AC.resume();
+    const o=AC.createOscillator(),g=AC.createGain();
+    o.type='sine';o.frequency.value=f;g.gain.value=.18;o.connect(g);g.connect(AC.destination);
+    o.start();o.stop(AC.currentTime+d);
+  }catch(e){}
+}
+function alarm(){
+  [0,450,900].forEach(t=>setTimeout(()=>beep(880,.3),t));
+  try{navigator.vibrate&&navigator.vibrate([300,150,300,150,600])}catch(e){}
+}
+function wake(){try{navigator.wakeLock&&navigator.wakeLock.request('screen').catch(()=>{})}catch(e){}}
+
+/* ---------- 타이머 ---------- */
+function timerView(e,v){
+  if(T&&T.id===e.id){
+    const left=T.paused?T.left:Math.max(0,T.until-Date.now()),s=Math.ceil(left/1000);
+    return T.phase==='prep'?{d:String(s),l:'준비 중, 자세를 잡으세요'}:{d:fmt(s),l:T.paused?'일시정지':'진행 중'};
+  }
+  if(v>=e.rounds)return {d:'끝',l:'모두 완료'};
+  return {d:fmt(e.sec),l:'목표 '+fmtLong(e.sec)};
+}
+function paintTimer(){
+  if(!T)return;
+  const e=byId[T.id],tv=timerView(e,val(e.id));
+  const d=document.querySelector('[data-digits="'+e.id+'"]'),l=document.querySelector('[data-plabel="'+e.id+'"]'),t=document.querySelector('[data-toprun]');
+  if(d)d.textContent=tv.d; if(l)l.textContent=tv.l; if(t)t.textContent=tv.d;
+}
+function tick(){
+  if(!T||T.paused)return;
+  const now=Date.now();
+  if(now>=T.until){
+    if(T.phase==='prep'){T.phase='run';T.until=now+byId[T.id].sec*1000;T.lastBeep=null;beep(880,.25);render();return}
+    finish();return;
+  }
+  const s=Math.ceil((T.until-now)/1000);
+  if(s<=3&&s!==T.lastBeep){T.lastBeep=s;beep(600,.08)}
+  paintTimer();
+}
+setInterval(tick,200);
+function startT(id){
+  const e=byId[id];
+  if(val(id)>=e.rounds)return;
+  T={id:id,phase:store.prep?'prep':'run',paused:false,left:0,lastBeep:null,until:Date.now()+(store.prep?5000:e.sec*1000)};
+  beep(660,.08);wake();render();
+}
+function finish(){
+  const e=byId[T.id];T=null;
+  const n=val(e.id)+1;setVal(e.id,n);
+  flash={id:e.id,msg:e.name+' '+n+'/'+e.rounds+' 끝!',stamp:Date.now()};
+  const st=flash.stamp;alarm();render();
+  setTimeout(()=>{if(flash&&flash.stamp===st){flash=null;render()}},8000);
+}
+
+/* ---------- 화면 ---------- */
+function timeBody(e,v){
+  const act=T&&T.id===e.id,tv=timerView(e,v);
+  const chips=(e.rounds>1)?'<div class="rds">'+[...Array(e.rounds)].map((_,k)=>'<span class="rd'+(k<v?' on':'')+(act&&k===v?' cur':'')+'">'+(e.labels?e.labels[k]:(k+1)+'회')+'</span>').join('')+'</div>':'';
+  let btns;
+  if(act)btns='<button class="btn" data-act="'+(T.paused?'resume':'pause')+'" data-id="'+e.id+'">'+(T.paused?'계속':'일시정지')+'</button><button class="btn" data-act="cancel" data-id="'+e.id+'">취소</button>';
+  else if(v>=e.rounds)btns='<button class="btn small" data-act="reset" data-id="'+e.id+'">다시 하기</button>';
+  else btns='<button class="btn primary" data-act="start" data-id="'+e.id+'">'+(e.rounds>1?(v+1)+'/'+e.rounds+'회 시작':'시작')+'</button>'+(v>0?'<button class="btn small" data-act="reset" data-id="'+e.id+'">되돌리기</button>':'');
+  return '<div class="timer"><div class="digits" data-digits="'+e.id+'">'+tv.d+'</div><div class="plabel" data-plabel="'+e.id+'">'+tv.l+'</div></div>'+chips+'<div class="btns">'+btns+'</div>';
+}
+function setsBody(e,v){
+  return '<div class="sets">'+[...Array(e.sets)].map((_,i)=>'<button class="btn'+(i<v?' on':'')+'" data-act="set" data-id="'+e.id+'" data-i="'+i+'">'+(e.sets>1?(i+1)+'세트 완료':'완료')+'</button>').join('')+'</div>';
+}
+function countBody(e,v){
+  return '<div class="count"><b>'+v+'</b><span>/ '+e.target+'회</span></div><div class="bar"><i style="width:'+Math.min(100,v/e.target*100)+'%"></i></div><div class="btns">'+
+    [1,5,10].map(n=>'<button class="btn primary" data-act="add" data-id="'+e.id+'" data-n="'+n+'">+'+n+'</button>').join('')+
+    '<button class="btn small" data-act="add" data-id="'+e.id+'" data-n="-1">-1</button></div>';
+}
+function card(e,n){
+  const v=val(e.id),d=isDone(e,v),fl=flash&&flash.id===e.id;
+  const body=e.kind==='time'?timeBody(e,v):e.kind==='sets'?setsBody(e,v):e.kind==='count'?countBody(e,v):
+    '<div class="btns"><button class="btn'+(v?' on':'')+'" data-act="check" data-id="'+e.id+'">'+(v?'완료':'10km 완료')+'</button></div>';
+  return '<article class="card'+(d?' done':'')+(fl?' alert':'')+'"><div class="head"><span class="no">'+String(n).padStart(2,'0')+'</span><div class="ttl"><h3>'+e.name+'</h3><p class="spec">'+e.spec+'</p></div>'+(d?'<span class="badge">완료</span>':'')+'</div>'+
+    '<div class="tags">'+e.muscles.map(m=>'<span class="tag">'+m+'</span>').join('')+'</div>'+(e.note?'<p class="note">'+e.note+'</p>':'')+body+'</article>';
+}
+
+function render(){
+  const done=EX.filter(e=>isDone(e,val(e.id))).length;
+  const doneDays=[...Array(30)].filter((_,i)=>dayDone(i+1)).length;
+  const remain=EX.filter(e=>e.kind==='time').reduce((a,e)=>a+Math.max(0,e.rounds-val(e.id))*e.sec,0);
+  let h='<header class="hero"><h1>30일 홈트 챌린지</h1><p>타이머 운동 합계 '+fmtLong(timedTotal)+' (횟수·거리 운동, 휴식 시간 제외)</p></header>';
+  h+='<div class="top"><div class="toprow"><div><span class="dayl">DAY '+store.day+'</span><span class="of"> / 30</span></div><div class="stat">'+done+'/'+EX.length+' 완료 · 타이머 남은 시간 '+fmtLong(remain)+' · <span class="sync" data-sync></span></div></div><div class="bar"><i style="width:'+(done/EX.length*100)+'%"></i></div>'+
+     (T?'<div class="runline"><b>'+byId[T.id].name+'</b><span data-toprun>'+timerView(byId[T.id],val(T.id)).d+'</span></div>':'')+'</div>';
+  h+='<section class="sec"><div class="sech"><h2>챌린지 달력</h2><span>'+doneDays+'/30일 완료</span></div><div class="dgrid">'+
+     [...Array(30)].map((_,i)=>{const n=i+1;return '<button class="dbtn'+(dayDone(n)?' done':'')+(n===store.day?' cur':'')+'" data-act="day" data-n="'+n+'" aria-label="'+n+'일차">'+n+'</button>'}).join('')+
+     '</div><div class="btns"><button class="btn small" data-act="prep">시작 전 준비 5초: '+(store.prep?'켜짐':'꺼짐')+'</button></div></section>';
+  let no=0;
+  ZONES.forEach((z,zi)=>{
+    const list=EX.filter(e=>e.zone===zi);
+    const tsec=list.filter(e=>e.kind==='time').reduce((a,e)=>a+e.sec*e.rounds,0);
+    h+='<section class="sec"><div class="sech"><h2>'+z+'</h2>'+(tsec?'<span>타이머 '+fmtLong(tsec)+'</span>':'')+'</div>'+list.map(e=>card(e,++no)).join('')+'</section>';
+  });
+  document.getElementById('app').innerHTML=h;
+  const t=document.getElementById('toast');
+  if(flash){t.hidden=false;t.textContent=flash.msg}else t.hidden=true;
+  setStatus(curStatus);
+}
+
+/* ---------- Google 시트 동기화 ---------- */
+let curStatus='local', busy=false, again=false, pulled=false, lastErr='', syncTimer=null, retryTimer=null;
+function sheetsUrl(){
+  const u=String(store.url||SHEETS_URL||'').trim();
+  return /^https:\/\/script\.google\.com\//.test(u)?u:'';
+}
+function pendingCount(){return Object.keys(store.pending).length}
+function setStatus(s){
+  curStatus=s;
+  const n=pendingCount();
+  const L={synced:['시트와 동기화됨','ok'],syncing:['동기화 중…','busy'],offline:['오프라인'+(n?' · '+n+'건 대기':''),'off'],local:['이 기기에만 저장','none']}[s]||['','none'];
+  document.querySelectorAll('[data-sync]').forEach(el=>{el.textContent=L[0];el.setAttribute('data-state',L[1])});
+  const m=document.getElementById('syncmsg');
+  if(m){
+    m.textContent=s==='local'?(lastErr||'시트 주소가 없어 이 기기에만 저장됩니다.'):
+      s==='offline'?'동기화하지 못했지만 기록은 이 기기에 저장되어 있습니다. 연결되면 자동으로 다시 보냅니다.'+(lastErr?' ('+lastErr+')':''):
+      s==='syncing'?'시트와 동기화하는 중입니다.':'모든 기록이 시트에 반영되었습니다.';
+  }
+}
+async function api(method,payload){
+  const base=sheetsUrl(),ctl=new AbortController(),to=setTimeout(()=>ctl.abort(),20000);
+  try{
+    let r;
+    if(method==='GET'){
+      r=await fetch(base+(base.indexOf('?')>=0?'&':'?')+'t='+Date.now(),{signal:ctl.signal});
+    }else{
+      // text/plain 이라 CORS 사전 요청(preflight)이 생기지 않습니다.
+      r=await fetch(base,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),signal:ctl.signal});
+    }
+    const j=await r.json();
+    if(!j||j.ok!==true)throw new Error((j&&j.error)||'서버 응답 오류');
+    return j;
+  }finally{clearTimeout(to)}
+}
+function mergeRows(rows){
+  const seen={};
+  rows.forEach(r=>{
+    const d=Number(r.day),ex=String(r.exercise),key=d+'_'+ex;
+    if(!(d>=1&&d<=30)||!byId[ex])return;
+    seen[key]=1;
+    const t=Number(r.updated_at)||0,v=Number(r.value)||0;
+    const loc=(store.log[d]||{})[ex];
+    if(!loc||t>loc.t){(store.log[d]=store.log[d]||{})[ex]={v:v,t:t};delete store.pending[key]}
+    else if(loc.t>t){store.pending[key]=1}
+  });
+  // 시트에 없는 로컬 기록은 잃지 않도록 다시 올립니다.
+  Object.keys(store.log).forEach(d=>{
+    Object.keys(store.log[d]).forEach(ex=>{
+      const key=d+'_'+ex;
+      if(!seen[key]&&store.log[d][ex].v>0)store.pending[key]=1;
+    });
+  });
+  save();
+}
+async function flush(){
+  const keys=Object.keys(store.pending);
+  if(!keys.length)return;
+  const ops=[],stamp={};
+  keys.forEach(k=>{
+    const i=k.indexOf('_'),d=k.slice(0,i),ex=k.slice(i+1),rec=(store.log[d]||{})[ex];
+    if(!rec){delete store.pending[k];return}
+    stamp[k]=rec.t;
+    ops.push({action:'upsert',id:k,day:Number(d),exercise:ex,value:rec.v,updated_at:rec.t});
+  });
+  if(!ops.length){save();return}
+  const j=await api('POST',{ops:ops});
+  ops.forEach(o=>{
+    const rec=(store.log[o.day]||{})[o.exercise];
+    if(rec&&rec.t===stamp[o.id])delete store.pending[o.id];
+  });
+  save();
+  if(j.skipped&&j.skipped.length)pulled=false;
+  if(pendingCount())await flush();
+}
+async function sync(){
+  clearTimeout(syncTimer);
+  if(!sheetsUrl()){setStatus('local');return}
+  if(busy){again=true;return}
+  busy=true;setStatus('syncing');
+  let ok=false;
+  try{
+    if(!pulled){const j=await api('GET');mergeRows(j.rows||[]);pulled=true;render()}
+    await flush();
+    lastErr='';ok=true;
+  }catch(e){
+    lastErr=String((e&&e.message)||e);
+  }
+  busy=false;
+  if(ok&&!pendingCount())setStatus('synced');
+  else{setStatus('offline');scheduleRetry()}
+  if(again){again=false;sync()}
+}
+function scheduleSync(){
+  if(!sheetsUrl()){setStatus('local');return}
+  setStatus(navigator.onLine===false?'offline':'syncing');
+  clearTimeout(syncTimer);
+  syncTimer=setTimeout(sync,600);
+}
+function scheduleRetry(){
+  clearTimeout(retryTimer);
+  retryTimer=setTimeout(sync,20000);
+}
+window.addEventListener('online',()=>{pulled=false;sync()});
+window.addEventListener('offline',()=>{if(sheetsUrl())setStatus('offline')});
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&sheetsUrl()){pulled=false;sync()}});
+
+/* ---------- 입력 처리 ---------- */
+document.addEventListener('click',ev=>{
+  const b=ev.target.closest('[data-act]');
+  if(!b)return;
+  const a=b.dataset.act,id=b.dataset.id,e=id?byId[id]:null;
+  if(a==='start')return startT(id);
+  if(a==='pause'&&T){T.left=Math.max(0,T.until-Date.now());T.paused=true;return render()}
+  if(a==='resume'&&T){T.until=Date.now()+T.left;T.paused=false;return render()}
+  if(a==='cancel'){T=null;return render()}
+  if(a==='reset'){setVal(id,0);flash=null;return render()}
+  if(a==='set'){const i=+b.dataset.i,v=val(id);setVal(id,v===i+1?i:i+1);return render()}
+  if(a==='add'){const n=+b.dataset.n;setVal(id,Math.max(0,Math.min(e.target,val(id)+n)));return render()}
+  if(a==='check'){setVal(id,val(id)?0:1);return render()}
+  if(a==='day'){store.day=+b.dataset.n;save();T=null;flash=null;return render()}
+  if(a==='prep'){store.prep=!store.prep;save();return render()}
+  if(a==='dismiss'){flash=null;return render()}
+  if(a==='saveurl'){
+    const el=document.getElementById('sheetUrl'),u=(el.value||'').trim();
+    store.url=u;save();lastErr='';pulled=false;
+    if(u&&!sheetsUrl()){lastErr='주소는 https://script.google.com/ 으로 시작해야 합니다.';setStatus('local');return}
+    return sync();
+  }
+  if(a==='syncnow'){pulled=false;return sync()}
+});
+
+/* ---------- 홈 화면 앱 지원 (가능한 경우) ---------- */
+try{
+  const icon=document.querySelector('link[rel="apple-touch-icon"]').href;
+  const m={name:'30일 홈트 챌린지',short_name:'30일 홈트',start_url:location.href.split('#')[0],display:'standalone',
+    background_color:'#EDF1EC',theme_color:'#1E6B45',icons:[{src:icon,sizes:'180x180',type:'image/png',purpose:'any'}]};
+  const l=document.createElement('link');l.rel='manifest';
+  l.href=URL.createObjectURL(new Blob([JSON.stringify(m)],{type:'application/manifest+json'}));
+  document.head.appendChild(l);
+}catch(e){}
+try{if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){}
+
+/* ---------- 시작 ---------- */
+document.getElementById('sheetUrl').value=store.url||SHEETS_URL||'';
+curStatus=sheetsUrl()?(navigator.onLine===false?'offline':'syncing'):'local';
+render();
+sync();
+</script>
+</body>
+</html>
